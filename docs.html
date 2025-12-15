@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documents — Sécurité Minière</title>
+<link rel="stylesheet" href="css/styles.css"></head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="navbar">
+      <div class="brand"><div class="logo">SM</div><div><div style="font-size:14px;color:var(--accent-2)">Sécurité</div><div style="font-size:14px;margin-top:-6px;font-weight:700">Minière</div></div></div>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Accueil</a><a href="about.html">À propos</a><a href="dangers.html">Dangers</a><a href="equipment.html">Équipements</a><a href="practices.html">Formations</a><a href="docs.html">Documents</a><a href="news.html">Actualités</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main style="padding-top:88px">
+    <section class="section reveal">
+      <h2>Documents & ressources</h2>
+      <div class="grid">
+        <div class="news-item">
+          <div style="font-weight:700">Checklist de sécurité (PDF)</div>
+          <div class="small">Imprimez et gardez sur le tableau d'affichage.</div>
+          <div style="margin-top:8px"><a class="btn btn-primary" href="assets/docs/check-list.pdf">Télécharger</a></div>
+        </div>
+
+        <div class="news-item">
+          <div style="font-weight:700">Procédure de sauvetage et d’évacuation (PDF)</div>
+          <div class="small">Procédure type pour sites souterrains.</div>
+          <div style="margin-top:8px"><a class="btn" href="assets/docs/Manuel de formation en sauvetage minnier.pdf">Télécharger</a></div>
+        </div>
+
+        <div class="news-item">
+          <div style="font-weight:700">Pictogrammes EPI (PDF)</div>
+          <div class="small">Conservation, inspection et remplacement.</div>
+          <div style="margin-top:8px"><a class="btn" href="assets/docs/catalogue-pictogrammes.pdf">Télécharger</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year6"></span> Sécurité Minière</footer>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>

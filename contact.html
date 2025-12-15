@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Sécurité Minière</title>
+<link rel="stylesheet" href="css/styles.css"></head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="navbar">
+      <div class="brand"><div class="logo">SM</div><div><div style="font-size:14px;color:var(--accent-2)">Sécurité</div><div style="font-size:14px;margin-top:-6px;font-weight:700">Minière</div></div></div>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Accueil</a><a href="about.html">À propos</a><a href="dangers.html">Dangers</a><a href="equipment.html">Équipements</a><a href="practices.html">Formations</a><a href="docs.html">Documents</a><a href="news.html">Actualités</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main style="padding-top:88px">
+    <section class="section reveal">
+      <h2>Contact & Signaler un incident</h2>
+      <p class="small">Pour urgence : appelez immédiatement le numéro affiché sur votre site ou contactez les services locaux.</p>
+
+      <!-- Utilise Formspree ou ton backend. Remplace ACTION par ton endpoint -->
+      <form class="form" action="https://formspree.io/f/mvgeldry" method="POST">
+        <input name="name" placeholder="Nom complet" required>
+        <input name="_replyto" type="email" placeholder="Email" required>
+        <input name="phone" placeholder="Téléphone (optionnel)">
+        <select name="type">
+          <option value="signalement">Signaler un incident</option>
+          <option value="info">Demande d'information</option>
+          <option value="formation">Inscription formation</option>
+        </select>
+        <textarea name="message" rows="6" placeholder="Décrire l'incident ou votre demande" required></textarea>
+        <button class="submit" type="submit">Envoyer le message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© <span id="year8"></span> Sécurité Minière</footer>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year8').textContent = new Date().getFullYear();</script>
+</body>
+</html>

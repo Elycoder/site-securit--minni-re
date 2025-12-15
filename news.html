@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Actualités — Sécurité Minière</title>
+<link rel="stylesheet" href="css/styles.css"></head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="navbar">
+      <div class="brand"><div class="logo">SM</div><div><div style="font-size:14px;color:var(--accent-2)">Sécurité</div><div style="font-size:14px;margin-top:-6px;font-weight:700">Minière</div></div></div>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Accueil</a><a href="about.html">À propos</a><a href="dangers.html">Dangers</a><a href="equipment.html">Équipements</a><a href="practices.html">Formations</a><a href="docs.html">Documents</a><a href="news.html">Actualités</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main style="padding-top:88px">
+    <section class="section reveal">
+      <h2>Actualités & alertes</h2>
+      <div class="grid">
+        <div class="news-item">
+          <div style="font-weight:700">12 Nov 2025 — Nouvelle norme ventilation</div>
+          <div class="small">Des recommandations actualisées pour améliorer la qualité de l'air.</div>
+          <a class="btn" href="assets/docs/Norme de ventilation.pdf">Lire</a>
+        </div>
+
+        <div class="news-item">
+          <div style="font-weight:700">03 Oct 2025 — Rapport d'accident analysé</div>
+          <div class="small">Analysons ensemble les causes pour éviter la répétition.</div>
+          <a class="btn" href="assets/docs/Rapport Accident.pdf">Lire</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year7"></span> Sécurité Minière</footer>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year7').textContent = new Date().getFullYear();</script>
+</body>
+</html>
